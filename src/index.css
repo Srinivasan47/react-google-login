@@ -1,0 +1,95 @@
+/* TMAS color palette */
+:root {
+  --theme-primary-color: #2196f3;
+  --theme-light-primary-color: #0071ba;
+  --theme-dark-primary-color: #306fb4;
+  --theme-secondary-color: #1976d2;
+  --theme-disabled-color: rgb(0 0 0 / 26%);
+  --theme-signal-error: #f44336;
+  --theme-signal-success: rgb(40, 197, 40);
+  --theme-signal-info: rgb(46, 228, 46);
+  --theme-signal-warning: rgb(216, 154, 40);
+  --theme-background: #151515;
+  --theme-login-background: #001147;
+  --theme-background-white: #fff;
+  --theme-appbar-background: #151515;
+  --theme-text-white: #fff;
+  --theme-text-black: #000;
+  --theme-placeholder-text-color: #03608a;
+  --theme-light-gray: #f2f2f2;
+  --theme-card-border-color: #e2e8e5;
+  --theme-breadcrumb-color: #e5e9ed;
+  --theme-h1-color: #0071ba;
+  --theme-h2-color: #0071ba;
+  --theme-h3-color: #0071ba;
+  --theme-h4-color: #0071ba;
+  --theme-h5-color: #0071ba;
+  --theme-h6-color: #000;
+  --theme-primary-color-rgba-10: rgba(0, 114, 186, 0.1);
+}
+/*Radius*/
+:root {
+  --theme-button-radius: 0px;
+}
+/*Spacing*/
+:root {
+  --theme-p2-letter-spacing: 0.4px;
+  --theme-menu-letter-spacing: 15px;
+  --theme-menu-item-padding: 15px 60px;
+  --theme-input-padding-top: 5px;
+  --theme-input-padding-bottom: 5px;
+  --theme-table-header-border-width: 1px;
+}
+/* TMAS font */
+:root {
+  --theme-wf-body: 'Roboto', sans-serif;
+  --theme-wf-headings: 'Roboto', sans-serif;
+  --theme-wf-headings-weight: 400;
+  --theme-font-body-weight: 400;
+  --theme-h2: 32px;
+  --theme-h3: 20px;
+  --theme-h6: 18px;
+  --theme-h2-line-height: inherit;
+  --theme-h2-weight: 400;
+  --theme-p2: 14px;
+  --theme-noto: 400px;
+  --theme-menu-item-font-size: 30px;
+  --theme-menu-item-line-height: 40px;
+  --theme-table-header-font-size: 20px;
+  --theme-table-header-line-height: 26px;
+  --theme-table-body-font-size: 20px;
+  --theme-table-body-line-height: 26px;
+  --theme-s4: 32px;
+}
+body {
+  margin: 0;
+  background-color: var(--theme-background);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #0071ba;
+  border-color: #0071ba transparent #0071ba transparent;
+  animation: lds-dual-ring 2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
